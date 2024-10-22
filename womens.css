@@ -1,0 +1,125 @@
+/* Women's page specific styles */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/api/placeholder/1200/400');
+    background-position: center 30%;
+}
+
+.category-filter {
+    background: #fff5f5;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.filter-options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.filter-button {
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #e83e8c;
+    border-radius: 25px;
+    background: white;
+    color: #e83e8c;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.filter-button:hover {
+    background: #e83e8c;
+    color: white;
+}
+
+.filter-button.active {
+    background: #e83e8c;
+    color: white;
+}
+
+.trending-section {
+    margin: 3rem 0;
+}
+
+.trending-section h2 {
+    color: #e83e8c;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.product-card {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #e83e8c;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.color-options {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.color-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px #ddd;
+}
+
+.color-dot.black { background: #000; }
+.color-dot.red { background: #e83e8c; }
+.color-dot.beige { background: #f5e6db; }
+
+.size-guide {
+    background: #fff5f5;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+}
+
+.size-guide h3 {
+    color: #e83e8c;
+    margin-bottom: 1.5rem;
+}
+
+.size-chart {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.size-chart th {
+    background: #e83e8c;
+    color: white;
+    padding: 1rem;
+}
+
+.size-chart td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ffd7e6;
+}
+
+@media (max-width: 768px) {
+    .filter-button {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+}

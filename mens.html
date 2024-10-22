@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Shoes - Shoes R Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mens.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Shoes R Us</a>
+            <div class="nav-links">
+                <a href="mens.html" class="active">Men</a>
+                <a href="womens.html">Women</a>
+                <a href="kids.html">Kids</a>
+                <a href="sale.html">Sale</a>
+                <a href="payment.html">Payment</a>
+                <a href="shipping.html">Shipping</a>
+                <a href="about.html">About Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="category-hero">
+            <h1>Men's Footwear</h1>
+            <p>Style meets comfort in our exclusive men's collection</p>
+        </section>
+
+        <div class="content-wrapper">
+            <aside class="filters">
+                <div class="filter-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><button class="filter-btn active">All</button></li>
+                        <li><button class="filter-btn">Sneakers</button></li>
+                        <li><button class="filter-btn">Formal</button></li>
+                        <li><button class="filter-btn">Casual</button></li>
+                        <li><button class="filter-btn">Athletic</button></li>
+                        <li><button class="filter-btn">Boots</button></li>
+                    </ul>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Size</h3>
+                    <div class="size-grid">
+                        <button class="size-btn">7</button>
+                        <button class="size-btn">7.5</button>
+                        <button class="size-btn">8</button>
+                        <button class="size-btn">8.5</button>
+                        <button class="size-btn">9</button>
+                        <button class="size-btn">9.5</button>
+                        <button class="size-btn">10</button>
+                        <button class="size-btn">10.5</button>
+                        <button class="size-btn">11</button>
+                        <button class="size-btn">11.5</button>
+                        <button class="size-btn">12</button>
+                        <button class="size-btn">13</button>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Color</h3>
+                    <div class="color-options">
+                        <button class="color-btn" style="background-color: #000000;"></button>
+                        <button class="color-btn" style="background-color: #FFFFFF; border: 1px solid #ddd;"></button>
+                        <button class="color-btn" style="background-color: #964B00;"></button>
+                        <button class="color-btn" style="background-color: #808080;"></button>
+                        <button class="color-btn" style="background-color: #0000FF;"></button>
+                        <button class="color-btn" style="background-color: #FF0000;"></button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="products-section">
+                <div class="products-header">
+                    <h2>Men's Shoes</h2>
+                    <select class="sort-select">
+                        <option>Latest Arrivals</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Most Popular</option>
+                    </select>
+                </div>
+
+                <div class="products-grid">
+                    <!-- Product Cards -->
+                    <article class="product-card">
+                        <img src="images/ones.jpg" alt="Classic Sneaker">
+                        <div class="product-info">
+                            <h3>Classic Sneaker</h3>
+                            <p class="price">$89.99</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background-color: black;"></span>
+                                <span class="color-dot" style="background-color: white;"></span>
+                                <span class="color-dot" style="background-color: gray;"></span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Classic Sneaker')">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/runner.jpg" alt="Performance Runner">
+                        <div class="product-info">
+                            <h3>Performance Runner</h3>
+                            <p class="price">$129.99</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background-color: blue;"></span>
+                                <span class="color-dot" style="background-color: red;"></span>
+                                <span class="color-dot" style="background-color: black;"></span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Performance Runner')">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="images/formal.webp" alt="Business Oxford">
+                        <div class="product-info">
+                            <h3>Business Oxford</h3>
+                            <p class="price">$159.99</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background-color: #964B00;"></span>
+                                <span class="color-dot" style="background-color: black;"></span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Business Oxford')">Add to Cart</button>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <img src="/api/placeholder/300/300" alt="Casual Boots">
+                        <div class="product-info">
+                            <h3>Urban Boot</h3>
+                            <p class="price">$149.99</p>
+                            <div class="product-colors">
+                                <span class="color-dot" style="background-color: #964B00;"></span>
+                                <span class="color-dot" style="background-color: black;"></span>
+                                <span class="color-dot" style="background-color: gray;"></span>
+                            </div>
+                            <button class="add-to-cart" onclick="addToCart('Casual Boots')">Add to Cart</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="payment.html">Payment Methods</a></li>
+                    <li><a href="shipping.html">Shipping Information</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="mens.html">Men's Shoes</a></li>
+                    <li><a href="womens.html">Women's Shoes</a></li>
+                    <li><a href="kids.html">Kids' Shoes</a></li>
+                    <li><a href="sale.html">Sale Items</a></li>
+                </ul>
+            </div>
+        </div>
+   </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

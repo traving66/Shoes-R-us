@@ -1,0 +1,97 @@
+/* Kids page specific styles */
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('/api/placeholder/1200/400');
+    background-position: center;
+}
+
+.age-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.age-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px;
+    background: #f8f9fa;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.age-button.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #4CAF50;
+    border-radius: 20px;
+    background: white;
+    color: #4CAF50;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background: #4CAF50;
+    color: white;
+}
+
+.featured-section {
+    margin: 3rem 0;
+}
+
+.featured-section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.fun-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #FFD700;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.fun-badge span {
+    color: #FF6B6B;
+}
+
+.size-range {
+    margin-top: 0.5rem;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.measuring-guide {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+}
+
+.measuring-guide h3
